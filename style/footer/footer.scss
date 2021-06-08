@@ -1,0 +1,41 @@
+@import "../header/mixi";
+@import "../header/valiable";
+
+.footer {
+  text-align: center;
+  margin: 90px 0 50px 0;
+  padding-bottom: 20px;
+  
+  color: #888888;
+  font-size: 14px;
+  .footer__title {
+    img {
+      height: 40px;
+      width: 40px;
+      margin-right: 8px;
+    }
+  }
+
+  .footer__nav {
+    margin-top: 10px;
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+
+      li {
+        cursor: pointer;
+        &:hover {
+          color: $color-font--violet;
+        }
+      }
+    }
+
+    .footer__point {
+      transform: translateY(6%);
+      padding: 0 5px;
+    }
+  }
+}

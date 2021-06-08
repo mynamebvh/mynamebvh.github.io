@@ -1,0 +1,45 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin baseCenter {
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin centerOther($padding) {
+  display: block;
+  margin: 0 auto;
+  padding: $padding 0;
+}
+
+@mixin hidden {
+  display: none;
+}
+
+@mixin zoomImg($path) {
+  transition: all .7s;
+  height: 100%;
+  width: 100%;
+  // background-image: url("../img/img-card/1.jpg");
+  background-image: url($path) !important;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+@mixin slide ($path, $left, $time) {
+  position: absolute;
+    top: 100%;
+    left: $left;
+    // z-index: -4;
+    transition: all $time;
+    height: 56px;
+    width: 56px;
+    border: 2px solid rgba(0,0,0,0);
+    background-image: url($path) !important;
+    background-size: cover;
+    margin: 0 3px;
+}
